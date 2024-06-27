@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Encryption/Decryption Tool</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0/jsencrypt.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>RSA Encryption / Decryption Tool</h1>
+        <div>
+            <nav id="menu">
+                <div><a href="keygeneration.html" target="_blank" id="keyss">Key Generation</a></div>
+            </nav>
+        </div>
+        <div class="encryption">
+            <h2>RSA Encryption</h2>
+            <textarea id="encryptionText" placeholder="Encryption Text"></textarea><br>
+            <textarea id="encryptionPublicKey" placeholder="Public key"></textarea><br>
+            <button onclick="encrypt()">Encrypt</button><br>
+            <textarea id="encryptedText" placeholder="Encrypted Text"></textarea>
+        </div>
+        <div class="decryption">
+            <h2>RSA Decryption</h2>
+            <textarea id="decryptionText" placeholder="Encrypted Text"></textarea><br>
+            <textarea id="decryptionPrivateKey" placeholder="Private key"></textarea><br>
+            <button onclick="decrypt()">Decrypt</button><br>
+            <textarea id="decryptedText" placeholder="Decrypted Text"></textarea>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

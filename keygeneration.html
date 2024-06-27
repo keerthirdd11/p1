@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSA Key Generation</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsencrypt/3.0.0/jsencrypt.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Create RSA public / private keys</h1>
+        <label for="encryptionMode">Encryption Mode</label>
+        <select id="encryptionMode">
+            <option value="512">512 Bits</option>
+            <option value="1024">1024 Bits</option>
+            <option value="2048">2048 Bits</option>
+        </select>
+        <button onclick="generateKeys()">Create public / Private key</button>
+        <div>
+            <textarea id="publicKey" placeholder="Public Key" class="key-output"></textarea>
+            <textarea id="privateKey" placeholder="Private Key" class="key-output"></textarea>
+        </div>
+        <button onclick="location.href='index.html'">Back to Home</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
+

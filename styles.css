@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('img.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #f7efef;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: rgba(255, 255, 255, 0.8);
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+button {
+    background-color: #7fbcd6;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #f5bee3;
+}
+
+textarea::placeholder, input::placeholder {
+    color: #999;
+}
+
+textarea, input {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+}
+
+@media (max-width: 600px) {
+    header nav a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    section {
+        margin: 10px 0;
+        padding: 10px;
+    }
+}
+
+#encryptionText, #encryptionPublicKey, #encryptedText, #decryptionText, #decryptionPrivateKey, #decryptedText {
+    width: 300px;
+    text-align: center;
+}
+
+.decryption, .encryption {
+    text-align: center;
+}
+
+#menu {
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    gap: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+#keyss, #keysss {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1 {
+    text-align: center;
+}
+
+.key-output {
+    width: 80%;
+    height: 100px;
+    margin-top: 10px;
+}
+
+#keygeneration h1, #keygeneration label, #keygeneration select, #keygeneration button {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#keygeneration textarea {
+    font-size: 18px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+    margin-top: 10px;
+}
